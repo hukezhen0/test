@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import "_base";
+@import "_mixins";
+@import "_function";
+.opg{
+
+    //按钮基本类型
+    a.xin-btn{
+        @include border-radius(3px);
+        height: pxTorem($normal-header-height);
+        line-height: pxTorem($normal-header-height);
+        text-align: center;
+        display: block;
+        color:$font-white-normal;
+        font-size:pxTorem($title-Subhead);
+    }
+    .btn:before{
+        position: absolute;
+    }
+    a.xin-btn-small{//小按钮
+        display: inline-block;
+        min-width:pxTorem($xin-btn-small-width);
+        height:pxTorem($xin-btn-small-height);
+        line-height:pxTorem($xin-btn-small-height);
+        background-color: nth($main-color,1);
+        padding:0 pxTorem(20px);
+        &:active{
+            background-color: nth($main-color,2);
+            color: $font-status;
+        }
+    }
+    a.xin-btn-border-small{//小按钮带边框
+        display: inline-block;
+        min-width:pxTorem($xin-btn-small-width);
+        height:pxTorem($xin-btn-small-height);
+        line-height:pxTorem($xin-btn-small-height);
+        background-color: $font-white-normal;
+        color: nth($main-color,1);
+        border:1px solid nth($main-color,1);
+        padding:0 pxTorem(20px);
+        &:active{
+            color: $empty-color;
+            background-color: $btn-active-bor-color;
+        }
+    }
+    a.xin-btn-primary{//通用红色按钮
+        background-color: nth($main-color,1);
+        color: $font-white-normal;
+        &:active{
+            background-color: nth($main-color,2);
+            color: $font-status;
+        }
+    }
+    a.xin-primary-disabled{
+        color: #ef6d70;
+        background-color: nth($main-color,1);
+
+    }
+    a.xin-btn-empty{
+        background-color: $empty-color;
+        color: $font-status;
+    }
+    a.xin-btn-disabled{
+        background-color: $gray-color;
+        color:$font-status;
+    }
+    a.xin-btn-border-primary{
+        border:1px solid nth($main-color,1);
+        background-color: $font-white-normal;
+        color: nth($main-color,1);
+        &:active{
+            color: $empty-color;
+            background-color: $btn-active-bor-color;
+        }
+    }
+    a.xin-btn-border-disabled{
+        border:1px solid nth($main-color,1);
+        background-color: $font-white-normal;
+        color: $btn-bor-disabled;
+    }
+    a.xin-btn-stretch{
+        display: inline-block;
+        min-width: pxTorem($xin-btn-strech-width);
+        height: pxTorem($xin-btn-strech-height);
+        line-height: pxTorem($xin-btn-strech-height);
+        background-color:nth($xin-btn-strech-color,1);
+        padding:0 pxTorem(20px);
+        &:active{
+            background-color:nth($xin-btn-strech-color,2);
+            color: $empty-color;
+        }
+    }
+    //btn-group
+    .btn-group{
+        display: flex;
+        display: -webkit-box;
+        display: box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        justify-content: space-between;
+        a.xin-btn{
+            flex:1;
+            -webkit-box-flex:1;
+        }
+        & a.xin-btn:first-child{
+            margin-right:5px;
+        }
+        & a.xin-btn:last-child{
+            margin-left:5px;
+        }
+    }
+    .xin-btn-mask{//白色半透明层
+        background-color: $xin-btn-mask;
+        padding:pxTorem($xin-mask-gap-vertical-small) pxTorem($xin-mask-gap-line-big);
+    }
+    .xin-btn-mask-small{//白色半透明层2
+        background-color: $xin-btn-mask;
+        padding:pxTorem($xin-mask-gap-normal);
+
+
+    }
+    .xin-btn-nav{
+        overflow: hidden;
+        .xin-btn-kind{
+            float: left;
+            height: pxTorem($xin-btn-small-height);
+            line-height: pxTorem($xin-btn-small-height);
+            font-size:pxTorem($title-Subhead);
+            .xin-icon-kind{
+                display: inline-block;
+                width:pxTorem($icon-mini);
+                height:pxTorem($icon-mini);
+                vertical-align: middle;
+                background: url(../../../images/h5/xin-icon-kind.png) no-repeat;
+                background-size: contain;
+                margin-right:pxTorem($gap-small);
+            }
+            a{
+                display: block;
+                color: $font-grey-normal;
+            }
+        }
+        .xin-btn-box{
+            float: right;
+            font-size:0;
+            & a.xin-btn{
+                float: left;
+            }
+            & a.xin-btn:last-child{
+                margin-left:pxTorem(30px);
+            }
+        }
+    }
+}
+.demo{
+    border-radius: 3px;
+    display: flex;
+    transform: translate(100px,100px);
+}

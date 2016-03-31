@@ -1,0 +1,460 @@
+@charset "UTF-8";
+@import "_base";
+@import "_mixins";
+@import "_function";
+.opg{
+    //头部icon公共样式
+    %header-icon{
+        display: inline-block;
+        width: pxTorem(40px);
+        height: pxTorem(40px);
+    }
+    //tab 公共样式
+    %xin-tab{
+        background: $cont-color;
+        height:pxTorem($normal-header-small);
+        position: relative;
+        &:before{
+            position: absolute;
+            content: '';
+            bottom:0;
+            left:0;
+            height:1px;
+            width:100%;
+            background-color: $border-color;
+        }
+
+
+    }
+    //搜索框内部icon
+    %search-icon{
+        position: absolute;
+
+        top:pxTorem(14px);
+        width:pxTorem($icon-small);
+        height:pxTorem($icon-small);
+    }
+    .xin-header{//-------------顶部导航---------------
+        height:pxTorem($normal-header-height);
+        padding:0 pxTorem($gap-small);
+        position: relative;
+        background-color: $nav-color;
+        border-bottom:1px solid $border-color;
+        .xin-search{//中间搜索板块
+            border:1px solid $border-color;
+            @include border-radius;
+            margin-left:pxTorem($gap-big);
+            margin-right:pxTorem($gap-big);
+            top: pxTorem(13px);
+            height:pxTorem($gap-big);
+            background-color: $font-white-normal;
+            overflow: hidden;
+            font-size:pxTorem($select-normal);
+            position: relative;
+           .xin-header-select{
+               float: left;
+               height:100%;
+               position: relative;
+               font-size:pxTorem($select-normal);
+               padding:0 pxTorem(22px) 0 pxTorem($gap-small);
+               line-height:pxTorem($gap-big);
+               margin-right:pxTorem(14px);
+               &:after{
+                   position: absolute;
+                   top:pxTorem(23px);
+                   right:0;
+                   content: "";
+                   width:0;
+                   height:0;
+                   border-width:pxTorem(8px);
+                   border-style:solid dashed dashed dashed;
+                   border-color: $font-grey-normal transparent transparent transparent;
+               }
+            }
+            input{
+                height:100%;
+                width:75%;
+                float: left;
+                border:none;
+                outline: none;
+                background-color:$font-white-normal;
+            }
+            .xin-icon-voice{
+               @extend %search-icon;
+               right:pxTorem($gap-small);
+                background: url(../../../images/h5/xin-icon-voice.png) no-repeat center 0;
+                background-size: contain;
+            }
+            .xin-icon-close{
+                @extend %search-icon;
+                right:pxTorem($gap-small);
+                background: url(../../../images/h5/xin-icon-close.png) no-repeat center 0;
+                background-size: contain;
+            }
+            .xin-icon-go{
+                @extend %search-icon;
+                left:pxTorem($gap-small);
+                background: url(../../../images/h5/xin-icon-search-go.png) no-repeat center 0;
+                background-size: contain;
+            }
+        }
+        .xin-search-cancel{
+            margin-left:0;
+            margin-right:pxTorem(80px);
+            .xin-icon-go{
+                display: none;
+            }
+        }
+        .xin-search-txt{
+            margin-right:pxTorem(80px);
+        }
+        .xin-search-go{
+            .xin-header-select{
+                display: none;
+            }
+            .xin-icon-go{
+                display:block;
+            }
+            input{
+                margin-left:pxTorem($gap-large);
+            }
+        }
+        //右侧有两个icon
+        .xin-search-short{
+            margin-right:pxTorem(160px);
+        }
+        //右侧什么都没有
+        .xin-search-long{
+            margin-right:0;
+        }
+        .xin-header-title{
+            font-size:pxTorem($title-normal);
+            line-height:pxTorem($normal-header-height);
+            @include text-align;
+            color: $font-grey-normal;
+        }
+        .xin-header-back{//-----------返回icon-----------
+            position: absolute;
+            left:pxTorem($gap-small);
+            top:pxTorem(23px);
+            width:pxTorem($icon-normal);
+            height:pxTorem($icon-normal);
+        }
+        .xin-icon-back{
+            display: block;
+            width:pxTorem(21px);
+            height:pxTorem($icon-normal);
+            background: url(../../../images/h5/xin-icon-back.png) no-repeat;
+            background-size:contain;
+        }
+        .xin-header-tip{//--------右侧部分-----------
+            position: absolute;
+            top:pxTorem(23px);
+            right:pxTorem($gap-small);
+            height:pxTorem($icon-normal);
+            line-height:pxTorem($icon-normal);
+            color: $font-grey-normal;
+            font-size: 0;
+            .xin-header-txt{
+                display: inline-block;
+                height: pxTorem($icon-normal);
+                line-height:pxTorem($icon-normal);
+                color: $font-grey-light;
+                vertical-align: top;
+                font-size: pxTorem($title-Subhead);
+            }
+            .xin-icon-menu{
+                @extend %header-icon;
+                background: url(../../../images/h5/xin-icon-menu.png) no-repeat;
+                background-size: contain;
+            }
+            .xin-icon-more{
+                @extend %header-icon;
+                background: url(../../../images/h5/xin-icon-more.png) no-repeat 0 0.16rem;
+                background-size: contain;
+            }
+            .xin-icon-information{
+                position: relative;
+                @extend %header-icon;
+                background: url(../../../images/h5/xin-icon-information.png) no-repeat center center;
+                background-size: contain;
+                .xin-news-num{
+                    position: absolute;
+                    top:-50%;
+                    right:- pxTorem(15px);
+                    min-width:pxTorem($xin-dot-size);
+                    height:pxTorem($xin-dot-size);
+                    line-height:pxTorem($xin-dot-size);
+                    box-sizing: content-box;
+                    padding:2px;
+                    @include border-radius(15px);
+                    @include text-align(center);
+                    color: $font-white-normal;
+                    font-size: pxTorem(10px);
+                    background-color:nth($main-color,1) ;
+                }
+            }
+            .xin-icon-searching{
+                @extend %header-icon;
+                background: url(../../../images/h5/xin-icon-search-go.png) no-repeat;
+                background-size: contain;
+            }
+            & a:last-child{
+                margin-left:pxTorem($icon-normal);
+            }
+        }
+    }
+    //2级tab------------2
+    .xin-tab-couple{
+        padding:0 pxTorem($gap-large);
+        @extend %xin-tab;
+        .xin-do{
+            display: inline-block;
+
+        }
+
+    }
+    .xin-tab-in{
+        overflow: hidden;
+        font-size:pxTorem(30px);
+        height:pxTorem($normal-header-small);
+        line-height:pxTorem($normal-header-small);
+        li{
+            width:50%;
+            float: left;
+            text-align: center;
+            height:pxTorem($normal-header-small);
+            a{
+                display: inline-block;
+                height:pxTorem($normal-header-small);
+                color: $font-grey-normal;
+                padding:0 pxTorem($gap-small);
+                &:active{
+                    color: $font-grey-light;
+                }
+            }
+        }
+        .high{
+
+            a{
+                color: nth($main-color,1);
+
+                position: relative;
+                /*&:after{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    height:2px;
+                    background-color:nth($main-color,1) ;
+                    bottom: 0;
+                    left:0;
+                    width:100%;
+                }*/
+                border-bottom:2px solid nth($main-color,1);
+            }
+        }
+    }
+    //2级tab------------3
+    .xin-tab-three{
+        @extend %xin-tab;
+        li{
+            width:33.3333%;
+        }
+    }
+    //2级tab------------4
+    .xin-tab-four{
+        @extend %xin-tab;
+        li{
+            width:25%;
+            .xin-add-minus{
+                display: inline-block;
+                width:pxTorem(14px);
+                height:pxTorem($gap-small);
+                position: relative;
+                .xin-add{
+                    position: absolute;
+                    top:- pxTorem(11px);
+                    left:0;
+                    width:0;
+                    height:0;
+                    border-style:dashed dashed solid dashed;
+                    border-color: transparent transparent $font-grey-light transparent;
+                    border-width:pxTorem(10px);
+                }
+                .xin-nimus{
+                    position: absolute;
+                    bottom:- pxTorem(11px);
+                    left:0;
+                    width:0;
+                    height:0;
+                    border-style:solid dashed dashed dashed;
+                    border-color: $font-grey-light transparent transparent  transparent;
+                    border-width:pxTorem(10px);
+                }
+            }
+            /*.add-active{
+                .xin-add{
+                    border-color: transparent transparent nth($main-color,1) transparent;
+                }
+            }
+            .nimus-active{
+                .xin-nimus{
+                    border-color:  nth($main-color,1)  transparent transparent transparent;
+                }
+            }*/
+        }
+
+        .add-active{
+            .xin-add-minus{
+                .xin-add{
+                    border-color: transparent transparent nth($main-color,1) transparent;
+                }
+            }
+
+        }
+        .nimus-active{
+            .xin-add-minus{
+                .xin-nimus{
+                    border-color:  nth($main-color,1)  transparent transparent transparent;
+                }
+            }
+
+        }
+    }
+    //右侧有icon
+    .xin-tab-icon{
+        overflow: hidden;
+        @extend %xin-tab;
+        .xin-icon-do{
+            float: right;
+            width:pxTorem($gap-large);
+            height:pxTorem($normal-header-small);
+            position: relative;
+            &:before{
+                display: block;
+                content: '';
+                position: absolute;
+                top:pxTorem(21px);
+                right:pxTorem($gap-small);
+                width:pxTorem($icon-normal);
+                height:pxTorem($icon-normal);
+                background: url(../../../images/h5/xin-icon-rank.png) no-repeat;
+                background-size: contain;
+            }
+            &:after{
+                position: absolute;
+                left:0;
+                top:pxTorem(11px);
+                width:1px;
+                background-color: $border-color;
+                content: "";
+                height:pxTorem(60px);
+            }
+        }
+        .xin-tab-in{
+            margin-right:pxTorem($gap-large);
+            li{
+                width:25%;
+            }
+        }
+    }
+    //icon nav 上面为icon 下面为文字
+    .xin-nav-more{
+        border-bottom:1px solid $border-color;
+        background-color: $font-white-normal;
+        height:pxTorem($large-header-height);
+        padding:0 pxTorem($gap-large);
+        .xin-tab-in{
+            height:pxTorem($large-header-height);
+        }
+        li{
+            height:pxTorem($large-header-height);
+            position: relative;
+            
+             a{
+                text-align: center;
+                height: pxTorem($large-header-height);
+                 display: block;
+                 padding-top:pxTorem(20px);
+                .xin-nav-icon{
+                    display: block;
+                    width:pxTorem(34px);
+                    height:pxTorem(34px);
+                    margin:0 auto;
+
+                }
+                .all-good-icon{
+                     background:url(../../../images/h5/xin-icon-all-good.png) no-repeat;
+                     background-size: contain;
+                 }
+
+                .new-good-icon{
+                     background:url(../../../images/h5/xin-icon-new-good.png) no-repeat;
+                     background-size: contain;
+                }
+                .new-shop-icon{
+                     background:url(../../../images/h5/xin-icon-shop-home.png) no-repeat;
+                     background-size: contain;
+                }
+                .all-sale-icon{
+                    background:url(../../../images/h5/xin-icon-sale.png) no-repeat;
+                    background-size: contain;
+                }
+                .xin-nav-txt{
+                    line-height:pxTorem(30px);
+                    margin-top:pxTorem(15px);
+                    display: block;
+                    font-size:pxTorem($caption-normal);
+                }
+            }
+        }
+
+        //选中状态
+        .high{
+            .all-good-icon{
+                background:url(../../../images/h5/xin-icon-all-good-act.png) no-repeat;
+                background-size: contain;
+            }
+            .new-good-icon{
+                background:url(../../../images/h5/xin-icon-new-good-act.png) no-repeat;
+                background-size: contain;
+            }
+            .new-shop-icon{
+                background:url(../../../images/h5/xin-icon-shop-home-act.png) no-repeat;
+                background-size: contain;
+            }
+            .all-sale-icon{
+                background:url(../../../images/h5/xin-icon-sale-act.png) no-repeat;
+                background-size: contain;
+            }
+            a{
+                &:after{
+                    width:80%;
+                    left:10%;
+                }
+            }
+        }
+
+    }
+
+    //
+
+    .xin-tab-more{
+        margin-right:- pxTorem($gap-large);
+        margin-left:- pxTorem($gap-large);
+        li{
+            width:25%;
+        }
+        & li:not(:last-child){
+            &:before{
+                position: absolute;
+                content: '';
+                right:0;
+                top:pxTorem(($large-header-height - $border-height)/2);
+                width:1px;
+                background-color: $border-color;
+                height:pxTorem($border-height);
+            }
+        }
+    }
+}

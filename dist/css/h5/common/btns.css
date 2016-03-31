@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*----辅助色-----*/
+/*----字体色-----*/
+/*==============================标准字号==========================*/
+/*==============================间距==========================*/
+/*==============================1rem border==========================*/
+/*==============================部件尺寸==========================*/
+/*==============================btn==========================*/
+/*==============================icon==========================*/
+/*==============================dialog==========================*/
+/*==============================share==========================*/
+/*==============================列表==========================*/
+.opg a.xin-btn {
+  border-radius: 3px;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  text-align: center;
+  display: block;
+  color: #FFF;
+  font-size: 0.32rem;
+}
+.opg .btn:before {
+  position: absolute;
+}
+.opg a.xin-btn-small {
+  display: inline-block;
+  min-width: 1.6rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  background-color: #ee2f2f;
+  padding: 0 0.2rem;
+}
+.opg a.xin-btn-small:active {
+  background-color: #d62a2a;
+  color: rgba(255, 255, 255, 0.5);
+}
+.opg a.xin-btn-border-small {
+  display: inline-block;
+  min-width: 1.6rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  background-color: #FFF;
+  color: #ee2f2f;
+  border: 1px solid #ee2f2f;
+  padding: 0 0.2rem;
+}
+.opg a.xin-btn-border-small:active {
+  color: #f69797;
+  background-color: #f7f7f7;
+}
+.opg a.xin-btn-primary {
+  background-color: #ee2f2f;
+  color: #FFF;
+}
+.opg a.xin-btn-primary:active {
+  background-color: #d62a2a;
+  color: rgba(255, 255, 255, 0.5);
+}
+.opg a.xin-primary-disabled {
+  color: #ef6d70;
+  background-color: #ee2f2f;
+}
+.opg a.xin-btn-empty {
+  background-color: #f69797;
+  color: rgba(255, 255, 255, 0.5);
+}
+.opg a.xin-btn-disabled {
+  background-color: #cbcbcb;
+  color: rgba(255, 255, 255, 0.5);
+}
+.opg a.xin-btn-border-primary {
+  border: 1px solid #ee2f2f;
+  background-color: #FFF;
+  color: #ee2f2f;
+}
+.opg a.xin-btn-border-primary:active {
+  color: #f69797;
+  background-color: #f7f7f7;
+}
+.opg a.xin-btn-border-disabled {
+  border: 1px solid #ee2f2f;
+  background-color: #FFF;
+  color: #fbe0e1;
+}
+.opg a.xin-btn-stretch {
+  display: inline-block;
+  min-width: 3.04rem;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  background-color: #fa5a5a;
+  padding: 0 0.2rem;
+}
+.opg a.xin-btn-stretch:active {
+  background-color: #d65656;
+  color: #f69797;
+}
+.opg .btn-group {
+  display: -webkit-flex;
+  display: flex;
+  display: -webkit-box;
+  display: box;
+  display: -ms-flexbox;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.opg .btn-group a.xin-btn {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-flex: 1;
+}
+.opg .btn-group a.xin-btn:first-child {
+  margin-right: 5px;
+}
+.opg .btn-group a.xin-btn:last-child {
+  margin-left: 5px;
+}
+.opg .xin-btn-mask {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 0.1rem 0.3rem;
+}
+.opg .xin-btn-mask-small {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 0.2rem;
+}
+.opg .xin-btn-nav {
+  overflow: hidden;
+}
+.opg .xin-btn-nav .xin-btn-kind {
+  float: left;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  font-size: 0.32rem;
+}
+.opg .xin-btn-nav .xin-btn-kind .xin-icon-kind {
+  display: inline-block;
+  width: 0.34rem;
+  height: 0.34rem;
+  vertical-align: middle;
+  background: url(../../../images/h5/xin-icon-kind.png) no-repeat;
+  background-size: contain;
+  margin-right: 0.2rem;
+}
+.opg .xin-btn-nav .xin-btn-kind a {
+  display: block;
+  color: #666;
+}
+.opg .xin-btn-nav .xin-btn-box {
+  float: right;
+  font-size: 0;
+}
+.opg .xin-btn-nav .xin-btn-box a.xin-btn {
+  float: left;
+}
+.opg .xin-btn-nav .xin-btn-box a.xin-btn:last-child {
+  margin-left: 0.3rem;
+}
+
+.demo {
+  border-radius: 3px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(100px, 100px);
+          transform: translate(100px, 100px);
+}

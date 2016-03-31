@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*==============================标准色==========================*/
+
+/*----主色-----*/
+$main-color:#ee2f2f #d62a2a;//导航和大部分button（适用于APP首页导航，及这个app的大部分button）
+$cont-color:#fff;
+$nav-color:#F9F9F9;
+$list-color:#F4F4F4;
+$bg-color:#ECECEC;
+$border-color:#E4E4E4;
+$mask-color:#000;
+$empty-color:#f69797;
+
+
+/*----辅助色-----*/
+$gray-color:#cbcbcb;
+$btn-active-color:#FA5A5A;
+$btn-active-bor-color:#f7f7f7;
+$btn-bor-disabled:#fbe0e1;
+/*----字体色-----*/
+$font-white-normal:#FFF;
+$font-gray-deep:#333;
+$font-grey-normal:#666;
+$font-grey-light:#999;
+$font-blue-normal:#376492;
+$font-status:rgba(255,255,255,0.5);
+
+
+/*==============================标准字号==========================*/
+
+$title-large:40px;
+$title-normal:36px;
+$title-Subhead:32px;
+$content-normal:30px;
+$article-normal:28px;
+$select-normal:26px;
+$caption-normal:24px;
+$caption-small:22px;
+
+
+/*==============================间距==========================*/
+
+$gap-small:20px;
+$gap-normal:40px;
+$gap-big:60px;
+$gap-large:80px;
+
+/*==============================1rem border==========================*/
+%border{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:200%;
+    height:200%;
+    border:1px solid rgba(0,0,0,0.2);
+    transform: scale(0.5,05);
+}
+
+/*==============================部件尺寸==========================*/
+
+$normal-header-small:84px;
+$normal-header-height:88px;
+$large-header-height:114px;
+$border-height:58px;
+
+
+
+/*==============================btn==========================*/
+$xin-btn-mask:rgba(255,255,255,0.85);
+$xin-btn-strech-color:#fa5a5a #d65656;
+$xin-btn-strech-width:304px;
+$xin-btn-strech-height:76px;
+$xin-btn-small-height:70px;
+$xin-btn-small-width:160px;
+
+$xin-mask-gap-line-big:30px;
+$xin-mask-gap-normal:20px;
+$xin-mask-gap-vertical-small:10px;
+
+$xin-dot-size:30px;
+
+
+/*==============================icon==========================*/
+$icon-small:30px;
+$icon-mini:34px;
+
+$icon-normal:40px;
+/*==============================dialog==========================*/
+$dialog-width:540px;
+$dialog-item-width:460px;
+$dialog-btn-height:86px;
+$dislog-input-height:80px;
+
+$action-cell-height:100px;
+$gap-action:20px;
+$box-width:380px;
+$box-height:110px;
+$box-bg:rgba(0,0,0,0.65);
+
+/*==============================share==========================*/
+$share-size:98px;
+$share-btn-height:102px;
+
+
+/*==============================列表==========================*/
+$list-pad:20px;
+$pic-size:200px;

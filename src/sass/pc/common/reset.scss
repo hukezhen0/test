@@ -1,0 +1,81 @@
+/* CSS Reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+lengend,
+button,
+input,
+textarea,
+th,
+td{
+    margin:0;
+    padding:0;
+    border:0 none;
+    list-style: none outside none;
+}
+body,
+button,
+input,
+select,
+textarea{
+    font:14px "微软雅黑",Arial,Tahoma,Helvetica,sans-serif;
+}
+ul,
+ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    cursor:pointer;
+}
+a:hover{
+    text-decoration:none;
+}
+q:before,
+q:after{
+    content:'';
+}
+
+fieldset,img{
+    border:0 none;
+}
+img{
+    vertical-align:top;
+}
+button,
+input,
+select,
+textarea{
+    font-size:100%;
+    vertical-align:middle;
+    outline:0;
+}
+input[type="button"]{
+    cursor:pointer;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+hr{
+    border:0;
+    height:1px;
+}
+i{
+    font-style:normal;
+}

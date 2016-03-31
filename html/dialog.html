@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-use-rem="750">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="../dist/css/h5/common/reset-wap.css">
+    <link rel="stylesheet" href="../dist/css/h5/common/dialog.css">
+</head>
+<body class="opg ">
+
+    <script src="../dist/js/rem.js"></script>
+    <div class="xin-mask">
+        <!--一个标题一个输入框-->
+        <div class="xin-dialog" style="display:none;">
+            <h3 class="xin-dialog-title">编辑分类名</h3>
+            <div class="xin-dialog-item">
+                <input type="text" placeholder="请输入分类明细">
+            </div>
+            <div class="xin-dialog-btns">
+                <a href="javasciript:;">取消</a>
+                <a href="javasciript:;">确定</a>
+            </div>
+        </div>
+
+        <!--一个标题-->
+        <div class="xin-dialog" style="display:none;">
+            <h3 class="xin-dialog-title-line">确认删除照片？</h3>
+
+            <div class="xin-dialog-btns">
+                <a href="javasciript:;">取消</a>
+                <a href="javasciript:;">确定</a>
+            </div>
+        </div>
+
+        <!--一个标题 一个提示-->
+        <div class="xin-dialog" style="display: none;">
+            <h3 class="xin-dialog-title">确认删除照片？</h3>
+            <p class="xin-dialog-tip">该分类下的商品将会移动到未分类中</p>
+            <div class="xin-dialog-btns">
+                <a href="javasciript:;">取消</a>
+                <a href="javasciript:;">确定</a>
+            </div>
+        </div>
+
+
+        <!--底部弹出菜单-->
+       <div class="xin-actionsheet" style="display: none;">
+            <ul class="xin-actionsheet-menu">
+                <li>
+                    <a class="xin-actionsheet-cell" href="javascript:;">拍照</a>
+                </li>
+                <li>
+                    <a class="xin-actionsheet-cell" href="javascript:;">选择手机照片</a>
+                </li>
+            </ul>
+           <div class="xin-actionsheet-action">
+               <a class="xin-actionsheet-cell" href="javascript:;">取消</a>
+           </div>
+       </div>
+
+
+        <!--黑色提示框 一行-->
+        <div class="xin-colorbox" style="display: none;">
+            请输入库存
+        </div>
+
+
+        <!--黑色提示框 2行-->
+        <div class="xin-colorbox-doubble" style="display: none;">
+            请输入库存，价格及上传图片
+        </div>
+
+        <!--laoding -->
+
+        <div class="xin-colorbox-loading" style="">
+            <div class="xin-loading-box">
+                <img src="../dist/images/h5/xin-box-loading.gif" alt="">
+            </div>
+            <p>正在加载...</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

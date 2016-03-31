@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import "_base";
+@import "_mixins";
+@import "_function";
+.opg{
+    %colorbox{//黑色弹框公用样式
+        width: pxTorem($box-width);
+        color: $font-white-normal;
+        @include border-radius(pxTorem(6px));
+        font-size: ($title-Subhead/100);
+        z-index: 1000;
+        @extend %center;
+        background-color: $box-bg;
+        @include text-align(center);
+    }
+    .xin-mask {//遮罩层
+        position: fixed;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        background-color: rgba(0, 0, 0, 0.6);
+        line-height:1.5;
+
+    }
+
+    .xin-dialog{//会话框
+        position: absolute;
+        top:50%;
+        left:50%;
+        @include tanslate(-50%,-50%);
+        background-color: $nav-color;
+        @include border-radius(6px);
+        width:pxTorem($dialog-width);
+        .xin-dialog-title{//标题
+            font-size:pxTorem($title-Subhead);
+            text-align: center;
+            padding-top:pxTorem(30px);
+        }
+        .xin-dialog-tip{
+            @include text-align(center);
+            font-size:pxTorem($article-normal);
+            color: $font-grey-normal;
+            padding:pxTorem(10px) 0 pxTorem(30px);
+
+        }
+        .xin-dialog-title-line{
+            height:pxTorem(130px);
+            line-height:pxTorem(130px);
+            @include text-align(center);
+            font-size:pxTorem($title-Subhead);
+        }
+        .xin-dialog-item{
+            width:pxTorem($dialog-item-width);
+            margin:pxTorem(15px) auto pxTorem(36px);
+
+            input{
+                border:1px solid $border-color;
+                @include border-radius(6px);
+                font-size:pxTorem($article-normal);
+                padding:0 pxTorem(10px);
+                width:100%;
+                height:pxTorem($dislog-input-height);
+                display: block;
+                outline: none;
+                text-align: center;
+            }
+        }
+        .xin-dialog-btns{//底部按钮
+            font-size:0;
+            position: relative;
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                top:0;
+                left:0;
+                height:1px;
+                width:100%;
+                background-color:$font-grey-light;
+                transform: translateY(0.5);
+
+            }
+            a{
+                font-size:pxTorem($title-Subhead);
+                display: inline-block;
+                width:50%;
+                height:pxTorem($dialog-btn-height);
+                line-height:pxTorem($dialog-btn-height);
+                color: $font-gray-deep;
+                @include text-align;
+                &:first-child{
+                    border-right:1px solid $font-grey-light;
+
+                }
+            }
+        }
+    }
+
+   .xin-actionsheet{//底部弹出菜单
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        @at-root .xin-actionsheet-menu{
+            & li:first-child{
+
+                position: relative;
+
+                &:before{
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+                    content: "";
+                    width:100%;
+                    height:1px;
+                    background-color: $border-color;
+                    transform: scaleY(0.5);
+                }
+            }
+        }
+        .xin-actionsheet-cell{
+            color: $font-gray-deep;
+            height:pxTorem($action-cell-height);
+            line-height:pxTorem($action-cell-height);
+            font-size:pxTorem(32px);
+            background-color: $font-white-normal;
+            @include text-align(center);
+            display: block;
+        }
+        .xin-actionsheet-action{
+            margin-top:pxTorem($gap-action);
+        }
+    }
+
+.xin-colorbox{//黑色提示框
+        @extend %colorbox;
+        height: pxTorem($box-height);
+        line-height: pxTorem($box-height);
+    }
+.xin-colorbox-doubble{
+        @extend %colorbox;
+        padding:pxTorem(30px) pxTorem(35px);
+    }
+.xin-colorbox-loading{
+        @extend %colorbox;
+        .xin-loading-box{
+            padding:pxTorem(30px) 0 pxTorem(10px);
+        }
+        p{
+            font-size:pxTorem($title-Subhead);
+            padding:pxTorem(10px) 0 pxTorem(30px);
+        }
+    }
+
+}
