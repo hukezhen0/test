@@ -1,0 +1,12 @@
+.opg .leftlist ul li a { color: #333; text-decoration: none; }
+
+.opg .leftlist { width: 205px; height: auto; overflow: hidden; float: left; }
+.opg .leftlist h2 { height: 50px; background: #b6012e; line-height: 50px; font-size: 16px; padding-left: 20px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -moz-ms-sizing: border-box; -moz-o-sizing: border-box; color: #FFFFFF; font-weight: 100; }
+.opg .leftlist ul li { position: relative; width: 100%; }
+.opg .leftlist ul li a { display: block; height: 40px; line-height: 40px; background: #e60039; cursor: pointer; color: #FFFFFF; font-size: 14px; padding-left: 20px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -moz-ms-sizing: border-box; -moz-o-sizing: border-box; }
+.opg .leftlist ul li a:hover { background: #fe3a6a; }
+.opg .leftlist ul li a.list-active { background: #fe3a6a; }
+.opg .leftlist ul li a span { position: absolute; right: 20px; top: 0; font-size: 14px; color: #FFFFFF; }
+.opg .leftlist ul li .sub-list { background: #edeef3; }
+.opg .leftlist ul li .sub-list a { color: #8E9198; background: #edeef3; font-size: 12px; color: #8E9198; line-height: 30px; height: 30px; }
+.opg .leftlist ul li .sub-list a:hover { color: #333; }

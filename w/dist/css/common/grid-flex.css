@@ -1,0 +1,111 @@
+/**************************************** nav *******************************************/
+.navigation { list-style: none; margin: 0; background: deepskyblue; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; }
+
+.navigation a { text-decoration: none; display: block; padding: 1em; color: #FFFFFF; }
+
+.navigation a:hover { background: #00AEE8; }
+
+/********************justify-content*****************/
+.flex-justify-start { box-pack: start; -webkit-justify-content: flex-start; -moz-justify-content: flex-start; -ms-justify-content: flex-start; -o-justify-content: flex-start; justify-content: flex-start; -ms-flex-pack: start; }
+
+.flex-justify-end { box-pack: end; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; -ms-justify-content: flex-end; -o-justify-content: flex-end; justify-content: flex-end; -ms-flex-pack: end; }
+
+.flex-justify-center { box-pack: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; -ms-flex-pack: center; }
+
+.flex-justify-space-between { box-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; -ms-flex-pack: justify; }
+
+.flex-justify-space-around { box-pack: distribute; -webkit-justify-content: space-around; -moz-justify-content: space-around; -ms-justify-content: space-around; -o-justify-content: space-around; justify-content: space-around; -ms-flex-pack: distribute; }
+
+/******************** align-items *****************/
+.flex-align-start { box-align: start; -webkit-align-items: flex-start; -moz-align-items: flex-start; -ms-align-items: flex-start; -o-align-items: flex-start; -ms-grid-row-align: flex-start; align-items: flex-start; -ms-flex-align: start; }
+
+.flex-align-end { box-align: end; -webkit-align-items: flex-end; -moz-align-items: flex-end; -ms-align-items: flex-end; -o-align-items: flex-end; -ms-grid-row-align: flex-end; align-items: flex-end; -ms-flex-align: end; }
+
+.flex-align-center { box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; -ms-grid-row-align: center; align-items: center; -ms-flex-align: center; }
+
+.flex-align-baseline { box-align: baseline; -webkit-align-items: baseline; -moz-align-items: baseline; -ms-align-items: baseline; -o-align-items: baseline; -ms-grid-row-align: baseline; align-items: baseline; -ms-flex-align: baseline; }
+
+.flex-align-stretch { box-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; -ms-align-items: stretch; -o-align-items: stretch; -ms-grid-row-align: stretch; align-items: stretch; -ms-flex-align: stretch; }
+
+/******************** align-content *****************/
+.flex-align-content-start { -webkit-align-content: flex-start; align-content: flex-start; -ms-flex-line-pack: start; }
+
+.flex-align-content-end { -webkit-align-content: flex-end; align-content: flex-end; -ms-flex-line-pack: end; }
+
+.flex-align-content-center { -webkit-align-content: center; align-content: center; -ms-flex-line-pack: center; }
+
+.flex-align-content-space-between { -webkit-align-content: space-between; align-content: space-between; -ms-flex-line-pack: justify; }
+
+.flex-align-content-space-around { -webkit-align-content: space-around; align-content: space-around; -ms-flex-line-pack: distribute; }
+
+.flex-align-content-stretch { -webkit-align-content: stretch; align-content: stretch; -ms-flex-line-pack: stretch; }
+
+/******************** flex-direction *****************/
+.flex-direction-row { box-orient: horizontal; box-direction: normal; -webkit-flex-direction: row; -moz-flex-direction: row; flex-direction: row; -ms-flex-direction: row; }
+
+.flex-direction-row-reverse { box-orient: horizontal; box-direction: reverse; -webkit-flex-direction: row-reverse; -moz-flex-direction: row-reverse; flex-direction: row-reverse; -ms-flex-direction: row-reverse; }
+
+.flex-direction-column { box-orient: vertical; box-direction: normal; -webkit-flex-direction: column; -moz-flex-direction: column; flex-direction: column; -ms-flex-direction: column; }
+
+.flex-direction-column-reverse { box-orient: vertical; box-direction: reverse; -webkit-flex-direction: column-reverse; -moz-flex-direction: column-reverse; flex-direction: column-reverse; -ms-flex-direction: column-reverse; }
+
+/******************** flex-wrap *****************/
+.flex-nowrap { -webkit-box-lines: single; -moz-box-lines: single; box-lines: single; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+
+.flex-wrap { -webkit-box-lines: multiple; -moz-box-lines: multiple; box-lines: multiple; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.flex-wrap-reverse { -webkit-box-lines: multiple; -moz-box-lines: multiple; box-lines: multiple; -webkit-flex-wrap: wrap-reverse; -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+
+/******************** order *****************/
+.flex-order1 { box-ordinal-group: 1; -webkit-order: 1; -moz-order: 1; order: 1; -ms-flex-order: 1; }
+
+.flex-order2 { box-ordinal-group: 2; -webkit-order: 2; -moz-order: 2; order: 2; -ms-flex-order: 2; }
+
+.flex-order3 { box-ordinal-group: 3; -webkit-order: 3; -moz-order: 3; order: 3; -ms-flex-order: 3; }
+
+.flex-order4 { box-ordinal-group: 4; -webkit-order: 4; -moz-order: 4; order: 4; -ms-flex-order: 4; }
+
+.flex-order5 { box-ordinal-group: 5; -webkit-order: 5; -moz-order: 5; order: 5; -ms-flex-order: 5; }
+
+.flex-order6 { box-ordinal-group: 6; -webkit-order: 6; -moz-order: 6; order: 6; -ms-flex-order: 6; }
+
+.flex-order7 { box-ordinal-group: 7; -webkit-order: 7; -moz-order: 7; order: 7; -ms-flex-order: 7; }
+
+.flex-order8 { box-ordinal-group: 8; -webkit-order: 8; -moz-order: 8; order: 8; -ms-flex-order: 8; }
+
+.flex-order9 { box-ordinal-group: 9; -webkit-order: 9; -moz-order: 9; order: 9; -ms-flex-order: 9; }
+
+.flex-order10 { box-ordinal-group: 10; -webkit-order: 10; -moz-order: 10; order: 10; -ms-flex-order: 10; }
+
+/******************* main *************************/
+.flex-container { padding: 0; margin: 0; list-style: none; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; margin-left: -1%; }
+
+.flex-item { width: 48%; height: 150px; margin-left: 1%; margin-top: 1%; line-height: 150px; color: white; font-weight: bold; font-size: 3em; text-align: center; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -moz-ms-sizing: border-box; -moz-o-sizing: border-box; background: #000000; }
+.flex-item .flex-box { width: 100%; background: gold; }
+
+/******************* section *************************/
+.wrapper { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; font-weight: bold; text-align: center; }
+
+.wrapper > * { padding: 10px; -webkit-flex: 1 100%; -ms-flex: 1 100%; flex: 1 100%; }
+
+.header { background: tomato; }
+
+.footer { background: lightgreen; }
+
+.main { text-align: left; background: deepskyblue; }
+
+.aside-1 { background: gold; }
+
+.aside-2 { background: hotpink; }
+
+@media all and (min-width: 600px) { .aside { -webkit-flex: 1 auto; -ms-flex: 1 auto; flex: 1 auto; } }
+@media all and (min-width: 800px) { .main { -webkit-flex: 2 0px; -ms-flex: 2 0px; flex: 2 0px; }
+  .aside-1 { -webkit-order: 1; -ms-flex-order: 1; order: 1; }
+  .main { -webkit-order: 2; -ms-flex-order: 2; order: 2; }
+  .aside-2 { -webkit-order: 3; -ms-flex-order: 3; order: 3; }
+  .footer { -webkit-order: 4; -ms-flex-order: 4; order: 4; } }
+/*********************************************************************** phone *************************************************************************************/
+@media all and (max-width: 800px) { .navigation { box-pack: distribute; -webkit-justify-content: space-around; -moz-justify-content: space-around; -ms-justify-content: space-around; -o-justify-content: space-around; justify-content: space-around; -ms-flex-pack: distribute; } }
+@media all and (max-width: 600px) { .navigation { -webkit-flex-flow: column wrap; padding: 0; }
+  .navigation a { text-align: center; padding: 10px; border-top: 1px solid rgba(255, 255, 255, 0.3); border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .navigation li:last-of-type a { border-bottom: none; } }
