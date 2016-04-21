@@ -1,0 +1,453 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*----辅助色-----*/
+/*----字体色-----*/
+/*==============================标准字号==========================*/
+/*==============================间距==========================*/
+/*==============================1rem border==========================*/
+/*==============================部件尺寸==========================*/
+/*==============================btn==========================*/
+/*==============================icon==========================*/
+/*==============================dialog==========================*/
+/*==============================share==========================*/
+/*==============================列表==========================*/
+/*==============================nav==========================*/
+.opg .xin-header .xin-header-tip .xin-icon-menu, .opg .xin-header .xin-header-tip .xin-icon-cart, .opg .xin-header .xin-header-tip .xin-icon-more, .opg .xin-header .xin-header-tip .xin-icon-information, .opg .xin-header .xin-header-tip .xin-icon-searching {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.opg .xin-tab-couple, .opg .xin-tab-three, .opg .xin-tab-four, .opg .xin-tab-icon {
+  background: #fff;
+  height: 0.84rem;
+  position: relative;
+}
+.opg .xin-tab-couple:before, .opg .xin-tab-three:before, .opg .xin-tab-four:before, .opg .xin-tab-icon:before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #E4E4E4;
+}
+.opg .xin-header .xin-search .xin-icon-voice, .opg .xin-header .xin-search .xin-icon-close, .opg .xin-header .xin-search .xin-icon-go {
+  position: absolute;
+  top: 0.14rem;
+  width: 0.3rem;
+  height: 0.3rem;
+}
+.opg .xin-header {
+  height: 0.88rem;
+  padding: 0 0.2rem;
+  position: relative;
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #E4E4E4;
+}
+.opg .xin-header .xin-search {
+  border: 1px solid #E4E4E4;
+  border-radius: 0.06rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  top: 0.13rem;
+  height: 0.6rem;
+  background-color: #FFF;
+  overflow: hidden;
+  font-size: 0.26rem;
+  position: relative;
+}
+.opg .xin-header .xin-search .xin-header-select {
+  float: left;
+  height: 100%;
+  position: relative;
+  font-size: 0.26rem;
+  padding: 0 0.22rem 0 0.2rem;
+  line-height: 0.6rem;
+  margin-right: 0.14rem;
+}
+.opg .xin-header .xin-search .xin-header-select:after {
+  position: absolute;
+  top: 0.27rem;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 0.08rem;
+  border-style: solid dashed dashed dashed;
+  border-color: #666 transparent transparent transparent;
+}
+.opg .xin-header .xin-search input {
+  height: 100%;
+  width: 75%;
+  float: left;
+  border: none;
+  outline: none;
+  background-color: #FFF;
+}
+.opg .xin-header .xin-search .xin-icon-voice {
+  right: 0.2rem;
+  background: url(../../images/xin-icon-voice.png) no-repeat center 0;
+  background-size: contain;
+}
+.opg .xin-header .xin-search .xin-icon-close {
+  right: 0.2rem;
+  background: url(../../images/xin-icon-close.png) no-repeat center 0;
+  background-size: contain;
+}
+.opg .xin-header .xin-search .xin-icon-go {
+  left: 0.2rem;
+  background: url(../../images/xin-search-sm.png) no-repeat center 0;
+  background-size: contain;
+}
+.opg .xin-header .xin-search-cancel {
+  margin-left: 0;
+  margin-right: 0.8rem;
+}
+.opg .xin-header .xin-search-cancel .xin-icon-go {
+  display: none;
+}
+.opg .xin-header .xin-search-right {
+  margin-right: 0.8rem;
+}
+.opg .xin-header .xin-search-go .xin-header-select {
+  display: none;
+}
+.opg .xin-header .xin-search-go .xin-icon-go {
+  display: block;
+}
+.opg .xin-header .xin-search-go input {
+  margin-left: 0.55rem;
+}
+.opg .xin-header .xin-search-short {
+  margin-right: 1.6rem;
+}
+.opg .xin-header .xin-search-long {
+  margin-right: 0;
+}
+.opg .xin-header .xin-header-title {
+  font-size: 0.36rem;
+  line-height: 0.88rem;
+  text-align: center;
+  color: #666;
+}
+.opg .xin-header .xin-header-back {
+  position: absolute;
+  left: 0.2rem;
+  top: 0.23rem;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.opg .xin-header .xin-icon-back {
+  display: block;
+  width: 0.21rem;
+  height: 0.4rem;
+  background: url(../../images/xin-icon-back.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-header .xin-icon-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../images/xin-icon-logo.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-header .xin-header-tip {
+  position: absolute;
+  top: 0.23rem;
+  right: 0.2rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  color: #666;
+  font-size: 0;
+}
+.opg .xin-header .xin-header-tip .xin-header-txt {
+  display: inline-block;
+  height: 0.4rem;
+  line-height: 0.44rem;
+  color: #999;
+  vertical-align: top;
+  font-size: 0.32rem;
+}
+.opg .xin-header .xin-header-tip .xin-icon-menu {
+  background: url(../../images/xin-icon-menu.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-header .xin-header-tip .xin-icon-cart {
+  background: url(../../images/xin-buy-cart.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-header .xin-header-tip .xin-icon-more {
+  background: url(../../images/xin-icon-more.png) no-repeat 0 0.16rem;
+  background-size: contain;
+}
+.opg .xin-header .xin-header-tip .xin-icon-information {
+  position: relative;
+  background: url(../../images/xin-icon-information.png) no-repeat center center;
+  background-size: contain;
+}
+.opg .xin-header .xin-header-tip .xin-icon-information .xin-news-num {
+  position: absolute;
+  top: -50%;
+  right: -0.15rem;
+  min-width: 0.3rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  box-sizing: content-box;
+  border-radius: 15px;
+  text-align: center;
+  color: #FFF;
+  font-size: 0.14rem;
+  background-color: #ee2f2f;
+}
+.opg .xin-header .xin-header-tip .xin-icon-searching {
+  background: url(../../images/xin-icon-search-go.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-header .xin-header-tip a:last-child {
+  margin-left: 0.4rem;
+}
+.opg .xin-tab-couple {
+  padding: 0 0.8rem;
+}
+.opg .xin-tab-couple .xin-do {
+  display: inline-block;
+}
+.opg .xin-tab-in {
+  overflow: hidden;
+  font-size: 0.3rem;
+  height: 0.84rem;
+  line-height: 0.84rem;
+}
+.opg .xin-tab-in li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  height: 0.84rem;
+}
+.opg .xin-tab-in li a {
+  display: inline-block;
+  height: 0.84rem;
+  color: #666;
+  padding: 0 0.2rem;
+}
+.opg .xin-tab-in li a:active {
+  color: #999;
+}
+.opg .xin-tab-in .high a {
+  color: #ee2f2f;
+  position: relative;
+  /*&:after{
+      display: block;
+      content: "";
+      position: absolute;
+      height:2px;
+      background-color:nth($main-color,1) ;
+      bottom: 0;
+      left:0;
+      width:100%;
+  }*/
+  border-bottom: 2px solid #ee2f2f;
+}
+.opg .xin-tab-in .high a .xin-add {
+  border-color: transparent transparent #ee2f2f transparent !important;
+}
+.opg .xin-tab-three li {
+  width: 33.3333%;
+}
+.opg .xin-tab-four {
+       /* .add-active{
+            .xin-add-minus{
+                .xin-add{
+                    border-color: transparent transparent nth($main-color,1) transparent;
+                }
+            }
+
+        }
+        .nimus-active{
+            .xin-add-minus{
+                .xin-nimus{
+                    border-color:  nth($main-color,1)  transparent transparent transparent;
+                }
+            }
+        }*/
+}
+.opg .xin-tab-four li {
+  width: 25%;
+  /*.add-active{
+      .xin-add{
+          border-color: transparent transparent nth($main-color,1) transparent;
+      }
+  }
+  .nimus-active{
+      .xin-nimus{
+          border-color:  nth($main-color,1)  transparent transparent transparent;
+      }
+  }*/
+}
+.opg .xin-tab-four li .xin-add-minus {
+  display: inline-block;
+  width: 0.14rem;
+  height: 0.2rem;
+  position: relative;
+}
+.opg .xin-tab-four li .xin-add-minus .xin-add {
+  position: absolute;
+  top: -0.11rem;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #999 transparent;
+  border-width: 0.1rem;
+}
+.opg .xin-tab-four li .xin-add-minus .xin-nimus {
+  position: absolute;
+  bottom: -0.11rem;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid dashed dashed dashed;
+  border-color: #999 transparent transparent transparent;
+  border-width: 0.1rem;
+}
+.opg .xin-tab-four li:nth-of-type(3) .xin-add-minus .xin-add {
+  border-color: transparent transparent #999 transparent;
+}
+.opg .xin-tab-four li:nth-of-type(2) .xin-add-minus .xin-add {
+  border-color: transparent transparent #ee2f2f transparent;
+}
+.opg .xin-tab-four li.downArrow .xin-add-minus .xin-add {
+  border-color: transparent transparent #999 transparent;
+}
+.opg .xin-tab-four li.downArrow .xin-add-minus .xin-nimus {
+  border-color: #ee2f2f transparent transparent transparent;
+}
+.opg .xin-tab-icon {
+  overflow: hidden;
+}
+.opg .xin-tab-icon .xin-icon-do {
+  float: right;
+  width: 0.8rem;
+  height: 0.84rem;
+  position: relative;
+}
+.opg .xin-tab-icon .xin-icon-do:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0.21rem;
+  right: 0.2rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url(../../images/xin-icon-rank.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-tab-icon .xin-icon-do:after {
+  position: absolute;
+  left: 0;
+  top: 0.11rem;
+  width: 1px;
+  background-color: #E4E4E4;
+  content: "";
+  height: 0.6rem;
+}
+.opg .xin-tab-icon .xin-tab-in {
+  margin-right: 0.8rem;
+}
+.opg .xin-tab-icon .xin-tab-in li {
+  width: 25%;
+}
+.opg .xin-nav-more {
+  border-bottom: 1px solid #E4E4E4;
+  background-color: #FFF;
+  height: 1.14rem;
+  padding: 0 0.8rem;
+}
+.opg .xin-nav-more .xin-tab-in {
+  height: 1.14rem;
+}
+.opg .xin-nav-more li {
+  height: 1.14rem;
+  position: relative;
+}
+.opg .xin-nav-more li a {
+  text-align: center;
+  height: 1.14rem;
+  display: block;
+  padding-top: 0.2rem;
+}
+.opg .xin-nav-more li a .xin-nav-icon {
+  display: block;
+  width: 0.34rem;
+  height: 0.34rem;
+  margin: 0 auto;
+}
+.opg .xin-nav-more li a .all-good-icon {
+  background: url(../../images/xin-icon-all-good.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-nav-more li a .new-good-icon {
+  background: url(../../images/xin-icon-new-good.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-nav-more li a .new-shop-icon {
+  background: url(../../images/xin-icon-shop-home.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-nav-more li a .all-sale-icon {
+  background: url(../../images/xin-icon-sale.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-nav-more li a .xin-nav-txt {
+  line-height: 0.3rem;
+  margin-top: 0.15rem;
+  display: block;
+  font-size: 0.24rem;
+}
+.opg .xin-nav-more .high .all-good-icon {
+  background: url(../../images/xin-icon-all-good-act.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-nav-more .high .new-good-icon {
+  background: url(../../images/xin-icon-new-good-act.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-nav-more .high .new-shop-icon {
+  background: url(../../images/xin-icon-shop-home-act.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-nav-more .high .all-sale-icon {
+  background: url(../../images/xin-icon-sale-act.png) no-repeat;
+  background-size: contain;
+}
+.opg .xin-nav-more .high a:after {
+  width: 80%;
+  left: 10%;
+}
+.opg .xin-tab-more {
+  margin-right: -0.8rem;
+  margin-left: -0.8rem;
+}
+.opg .xin-tab-more li {
+  width: 25%;
+}
+.opg .xin-tab-more li:not(:last-child):before {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0.28rem;
+  width: 1px;
+  background-color: #E4E4E4;
+  height: 0.58rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}

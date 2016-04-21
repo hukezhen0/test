@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*----辅助色-----*/
+/*----字体色-----*/
+/*==============================标准字号==========================*/
+/*==============================间距==========================*/
+/*==============================1rem border==========================*/
+/*==============================部件尺寸==========================*/
+/*==============================btn==========================*/
+/*==============================icon==========================*/
+/*==============================dialog==========================*/
+/*==============================share==========================*/
+/*==============================列表==========================*/
+/*==============================nav==========================*/
+.opg .footer {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.opg .footer .client-bx {
+  width: auto;
+  height: 0.86rem;
+  line-height: 0.86rem;
+  background: #fff;
+}
+.opg .footer .client-bx a {
+  display: block;
+  float: left;
+  width: 33.3%;
+  font-size: 0.26rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  color: #333;
+  text-align: center;
+  margin-top: 0.2rem;
+  border-right: 1px solid #E4E4E4;
+}
+.opg .footer .client-bx a:nth-last-child {
+  border-right: none;
+}
+.opg .footer .icp-bx {
+  width: auto;
+  height: 1.1rem;
+  background: #ECECEC;
+  color: #999;
+  font-size: 0.24rem;
+  text-align: center;
+}
+.opg .footer .icp-bx p {
+  line-height: 0.38rem;
+  padding-top: 0.6rem;
+}

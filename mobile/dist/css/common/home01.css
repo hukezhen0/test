@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*----辅助色-----*/
+/*----字体色-----*/
+/*==============================标准字号==========================*/
+/*==============================间距==========================*/
+/*==============================1rem border==========================*/
+/*==============================部件尺寸==========================*/
+/*==============================btn==========================*/
+/*==============================icon==========================*/
+/*==============================dialog==========================*/
+/*==============================share==========================*/
+/*==============================列表==========================*/
+/*==============================nav==========================*/
+.xin-hot-say {
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.xin-sift-list li:nth-child(n+3):nth-child(-n+7):before, .xin-market-list li:nth-child(n+1):nth-child(-n+4):after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+}
+
+.xin-sift-list li:first-child:before, .xin-sift-list li:nth-child(n+3):after, .xin-market-list li:nth-child(n+1):nth-child(-n+3):before, .xin-market-list li:nth-child(n+5):nth-child(-n+7):before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  -webkit-transform: scaleX(0.5);
+          transform: scaleX(0.5);
+}
+
+/*-----------轮播------------*/
+.xin-carousel {
+  position: relative;
+  height: 3.18rem;
+}
+.xin-carousel .xin-slide-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.xin-carousel .xin-slide-list li {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.xin-carousel .xin-slide-list li img {
+  position: relative;
+  height: 3.18rem;
+  width: auto;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.xin-carousel .xin-carousel-nav {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0.26rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.xin-carousel .xin-carousel-nav li {
+  float: left;
+  overflow: hidden;
+  text-indent: -1000px;
+  margin: 0 0.05rem;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.xin-carousel .xin-carousel-nav .active {
+  width: 0.24rem;
+  background-color: #fff;
+}
+
+/*-----------------首页导航-----------------*/
+.xin-navigation {
+  height: 2rem;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0.25rem;
+}
+.xin-navigation .nav-item {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.xin-navigation .nav-item img {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: 0.1rem 0 0.07rem;
+}
+.xin-navigation .nav-item p {
+  font-size: 0.24rem;
+  color: #333;
+  height: 0.35rem;
+  line-height: 0.36rem;
+}
+
+/*-----------------精选布局-------------------*/
+.xin-sift-list {
+  overflow: hidden;
+}
+.xin-sift-list li {
+  float: left;
+  position: relative;
+}
+.xin-sift-list li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.xin-sift-list li:first-child {
+  width: 50%;
+  height: 4.4rem;
+}
+.xin-sift-list li:first-child:before {
+  background-color: #E4E4E4;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.xin-sift-list li:nth-child(n+2):nth-child(-n+5) {
+  width: 50%;
+  height: 2.2rem;
+}
+.xin-sift-list li:nth-child(n+6):nth-child(-n+7) {
+  width: 100%;
+  height: 2.2rem;
+}
+.xin-sift-list li:nth-child(n+3):nth-child(-n+7):before {
+  background-color: #E4E4E4;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.xin-sift-list li:nth-child(n+3):after {
+  background-color: #E4E4E4;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+/*---------------特色市场列表-----------------*/
+.xin-market-list {
+  overflow: hidden;
+}
+.xin-market-list li {
+  width: 25%;
+  float: left;
+  position: relative;
+}
+.xin-market-list li img {
+  width: 100%;
+  height: 2.2rem;
+}
+.xin-market-list li:nth-child(n+1):nth-child(-n+4):after {
+  background-color: #E4E4E4;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.xin-market-list li:nth-child(n+1):nth-child(-n+3):before {
+  background-color: #E4E4E4;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.xin-market-list li:nth-child(n+5):nth-child(-n+7):before {
+  background-color: #E4E4E4;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/*---------------热门圈子列表-----------------*/
+.xin-hot-item {
+  background-color: #fff;
+  overflow: hidden;
+}
+.xin-hot-item dt {
+  float: left;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: 0.35rem 0.2rem;
+}
+.xin-hot-item dt img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.xin-hot-item dd {
+  overflow: hidden;
+  padding: 0.16rem 0 0.16rem 0.16rem;
+  border-bottom: 1px solid #E4E4E4;
+}
+.xin-hot-tl {
+  font-size: 0.28rem;
+  font-weight: normal;
+  color: #333;
+  line-height: 1.6;
+}
+
+.xin-tags {
+  display: inline-block;
+  line-height: 1.2;
+  background-color: #31ba9e;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 0.18rem;
+  padding: 0.05rem 0.08rem;
+  font-style: normal;
+}
+
+.xin-hot-more {
+  line-height: 1.6;
+  overflow: hidden;
+}
+.xin-hot-more .xin-hot-sp {
+  float: left;
+  width: 50%;
+}
+
+.xin-hot-sp {
+  color: #999;
+  font-size: 0.28rem;
+  display: inline-block;
+}
+
+.xin-hot-say {
+  color: #999;
+  line-height: 1.6;
+  font-size: 0.28rem;
+}

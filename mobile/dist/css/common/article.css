@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/*==============================标准色==========================*/
+/*----主色-----*/
+/*----辅助色-----*/
+/*----字体色-----*/
+/*==============================标准字号==========================*/
+/*==============================间距==========================*/
+/*==============================1rem border==========================*/
+/*==============================部件尺寸==========================*/
+/*==============================btn==========================*/
+/*==============================icon==========================*/
+/*==============================dialog==========================*/
+/*==============================share==========================*/
+/*==============================列表==========================*/
+/*==============================nav==========================*/
+.opg .xin-hot-say {
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*---------------间距----------------*/
+.mt10 {
+  margin-top: 0.1rem;
+}
+
+.mt20 {
+  margin-top: 0.2rem;
+}
+
+.ml20 {
+  margin-left: 0.2rem;
+}
+
+.mt25 {
+  margin-top: 0.25rem;
+}
+
+.opg h4.goods-item-title {
+  font-size: 0.28rem;
+  line-height: 0.34rem;
+  height: 0.64rem;
+  font-weight: normal;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.opg .goods-item-num {
+  font-size: 0.24rem;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  color: #666;
+}
+.opg .price-current {
+  font-size: 0.2rem;
+  color: #ee2f2f;
+}
+.opg .price-current strong {
+  font-size: 0.32rem;
+}
+.opg .price-prev {
+  font-size: 0.22rem;
+  color: #999;
+}
+.opg .price-prev-deep {
+  font-size: 0.22rem;
+  color: #666;
+}
+.opg .xin-fan {
+  display: inline-block;
+  width: 0.28rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  background-color: #ee2f2f;
+  text-align: center;
+  color: #FFF;
+  border-radius: 0.05rem;
+  font-style: normal;
+  vertical-align: middle;
+  margin-right: 0.1rem;
+  font-size: 0.2rem;
+}
+.opg .xin-hot-tl {
+  font-size: 0.28rem;
+  font-weight: normal;
+  color: #333;
+  line-height: 1.6;
+}
+.opg .xin-tags {
+  display: inline-block;
+  line-height: 1.2;
+  background-color: #31ba9e;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 0.18rem;
+  padding: 0.05rem 0.08rem;
+  font-style: normal;
+}
+.opg .xin-hot-sp {
+  color: #999;
+  font-size: 0.28rem;
+  display: inline-block;
+}
+.opg .xin-hot-say {
+  color: #999;
+  line-height: 1.6;
+  font-size: 0.28rem;
+}
+
+.new-title {
+  height: 0.7rem;
+  line-height: 0.7rem;
+  background: #ececec;
+  color: #666;
+  font-size: 0.24rem;
+  padding-left: 0.2rem;
+}
+.new-title i {
+  display: block;
+  float: left;
+  width: 0.38rem;
+  height: 0.38rem;
+  margin-top: 0.14rem;
+}
+.new-title i.icon-gome {
+  background: url("../../images/icon-gome.png") no-repeat;
+  background-size: 0.38rem 0.38rem;
+}
+.new-title i.icon-hot-topic {
+  background: url("../../images/icon-hot-topic.png") no-repeat;
+  background-size: 0.38rem 0.38rem;
+}
+.new-title i.icon-hot-circle {
+  background: url("../../images/icon-hot-circle.png") no-repeat;
+  background-size: 0.38rem 0.38rem;
+}
+.new-title i.icon-market {
+  background: url("../../images/icon-market.png") no-repeat;
+  background-size: 0.38rem 0.38rem;
+}
+.new-title i.icon-recommend {
+  background: url("../../images/icon-recommend.png") no-repeat;
+  background-size: 0.38rem 0.38rem;
+}
+.new-title span {
+  display: block;
+  overflow: hidden;
+  padding-left: 0.1rem;
+}
+
+.text-box {
+  padding: 0.2rem;
+  overflow: hidden;
+}
+
+.avatar-box {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.avatar-box .avatar {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.avatar-box .avatar img {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.avatar-box p {
+  font-size: 0.22rem;
+  color: #999;
+  padding-left: 0.2rem;
+  float: left;
+  line-height: 0.5rem;
+}
+
+h2.sub-title {
+  font-size: 0.3rem;
+  line-height: 0.36rem;
+  color: #376492;
+  margin-top: 0.15rem;
+  margin-bottom: 0.12rem;
+}
+h2.sub-title a {
+  color: #376492;
+}
+
+p.text {
+  font-size: 0.28rem;
+  line-height: 0.38rem;
+}
+
+.time-box {
+  width: auto;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  font-size: 0.24rem;
+  color: #999;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  background: #fff;
+}
+.time-box span {
+  float: left;
+}
+.time-box span:nth-child(2) {
+  float: right;
+  text-align: center;
+  background: url("../../images/icon-tips.png") no-repeat left;
+  background-size: 0.36rem 0.31rem;
+  padding-left: 0.52rem;
+}
+
+.text-detail {
+  padding: 0.2rem 0.2rem 0.2rem 0.17rem;
+  overflow: hidden;
+}
+.text-detail .product-title {
+  font-size: 0.28rem;
+  color: #999;
+  line-height: 0.38rem;
+  height: 0.7rem;
+}
+.text-detail .price-box {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  margin-top: 0.23rem;
+}
+.text-detail .price-box .price {
+  float: left;
+  width: auto;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  color: #ee2f2f;
+  font-size: 0.33rem;
+  margin-right: 0.1rem;
+}
+.text-detail .price-box .return-coin {
+  display: block;
+  padding: 0 0.08rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.16rem;
+  background: #ee2f2f;
+  border-radius: 0.08rem;
+  float: left;
+}
