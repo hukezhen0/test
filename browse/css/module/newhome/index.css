@@ -213,7 +213,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .opg .gg-banner-bx {
   position: relative;
   width: 7.5rem;
-  height: 5rem;
+  height: 4.22rem;
   overflow: hidden;
 }
 .opg .gg-banner-bx .gg-baner-list {
@@ -226,7 +226,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 }
 .opg .gg-banner-bx .gg-baner-list li img {
   width: 7.5rem;
-  height: 5rem;
+  height: 4.22rem;
 }
 .opg .gg-banner-bx .gg-carousel-nav {
   position: absolute;
@@ -433,6 +433,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   height: 0.66rem;
   border: 1px solid #d8d8d8;
   border-radius: 50%;
+  margin-top: 0.1rem;
 }
 .opg .gg-recommend-store li .gg-focus-bx .gg-head img {
   width: 0.64rem;
@@ -482,6 +483,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   text-align: left;
   font-size: 0.28rem;
   color: #333;
+  font-weight: normal;
 }
 .opg .gg-gomeadd .gg-gome-left .gg-con {
   font-size: 0.28rem;
