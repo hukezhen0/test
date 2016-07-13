@@ -1,5 +1,0 @@
-@charset "UTF-8";
-
-@function pxTorem($px){
-    @return $px / 100px * 1rem;
-}
