@@ -183,7 +183,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   height: 0.28rem;
   background: url("../../../images/newindex/icon05.png") no-repeat;
   background-size: 0.27rem 0.28rem;
-  vertical-align: -0.08rem;
+  vertical-align: -0.09rem;
   margin-right: 5px;
 }
 .opg em.icon06 {
@@ -432,13 +432,11 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   width: 0.66rem;
   height: 0.66rem;
   border: 1px solid #d8d8d8;
-  border-radius: 50%;
   margin-top: 0.1rem;
 }
 .opg .gg-recommend-store li .gg-focus-bx .gg-head img {
   width: 0.64rem;
   height: 0.64rem;
-  border-radius: 50%;
 }
 .opg .gg-recommend-store li .gg-focus-bx .gg-text-bx {
   float: left;
