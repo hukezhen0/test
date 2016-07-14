@@ -179,10 +179,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   background-size: 0.6rem 0.6rem;
 }
 .opg em.icon05 {
-  width: 0.36rem;
+  width: 0.28rem;
   height: 0.28rem;
   background: url("../../../images/newindex/icon05.png") no-repeat;
-  background-size: 0.36rem 0.28rem;
+  background-size: 0.28rem 0.28rem;
   vertical-align: -0.08rem;
   margin-right: 5px;
 }
